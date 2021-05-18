@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+body{
+  margin:0px;
+  padding: 0px;
+  font-family: 'Open Sans', sans-serif;
+  background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXUjJePre4r8q9bqZ0zbriWJnRXsVibCNM_g&usqp=CAU);
+  background-size: cover;
+}
+
+/* Barre de navigation */
+nav{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #fff;
+    position: sticky;
+    top: 0;
+}
+nav h1{
+    font-size: 20px;
+    padding-top: 10px;
+}
+nav .onglets{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 3px;
+    margin-left: 300px;
+}
+nav .onglets a{
+    text-decoration: none;
+    color: #000;
+    margin-right: 20px;
+    padding-top: 30px;
+}
+nav .onglets input{
+    margin: 8px 20px;
+    padding: 15px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    background-color: #f2f2f2;
+
+}
+/* Fin de la barre de navigation */
+
+/* Header */
+header{
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #000000;
+    background-size: cover;
+    color: #fff;
+    padding: 50px;
+}
+header h1{
+    font-family: 'Playfair Display', serif;
+    font-size: 50px;
+    margin: auto;
+
+}
+header button{
+    padding: 20px 30px;
+    background-color: #fff;
+    color:#000;
+    border:none;
+    margin-bottom: 30px;
+    outline:none;
+    font-size: 20px;
+    font-family: 'Playfair Display', serif;
+    cursor: pointer;
+}
+/* Fin Header */
+
+  .main{
+      margin: 80px 20px 20px;
+      display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 50px;
+    background-color: rgb(220, 234, 245);
+  }
+        
+    .box {      
+      background-color:black;
+      padding: 20px;
+      margin: 20px;
+  }
+  .box > img {
+      width: 100%;
+      height: 100%;
+  }
+
+/* Espace Client/Admin */
+.tableau{
+    padding: 20px;
+    margin: auto;
+}
+
+.Modifier{
+    padding: 10px;
+}
+.panel{
+    display: flex;
+    padding-left: 20px;
+}
+button{
+  padding: 17px;
+  color:white;
+  background-color:black;
+  margin-bottom: 10px;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+td {
+    padding: 10px;
+    border: 1px solid #000000;
+}
+label.Card_Date, .Card_Name,.Card_Cvv,.Card_Num{
+    text-align: left;
+}
+/* Fin espace client/Admin */
+
+/*  formulaire d'inscription */
+.containerZone{
+    display: flex;
+}
+.regform{
+  background-color: rgba(255, 250, 250, 0.712);
+  margin: auto;
+  color: #070000;
+  padding: 10px 0px  10px 0px;
+  text-align: center;
+  border-radius: 15px 15px 0px 0px;
+}
+.formulaire{
+  background-color: rgba(243, 232, 232, 0.712);
+  width: 700px;
+  margin: auto;
+}
+form{
+  padding: 10px;
+}
+.formulaire label{
+  width: 220px;
+  display: block;
+  float: left;
+  margin-left: 20px;   
+}
+.input{
+  width: 200px;
+  height: 20px;
+  border-radius: 7px 7px 7px 7px;
+  border: none;
+ 
+}
+input.input:hover{
+  background-color: rgb(250, 250, 250);
+}
+#bouton {
+  width: 100px;
+  height: 40px;
+  background-color:#2f3640;
+  color: #ffffff;
+  text-align: center;
+  font-family: cambria ;
+  font-size: large; 
+  border: none;
+  border-radius: 7px 7px 7px 7px ;
+}
+input#bouton:hover{
+  background-color:#bbbbbb;
+  color: #2f3640;
+}
+/* Articles */
+.produit{
+    width: 500px;
+    margin-bottom: 50px;
+}
+h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 3em;
+    text-decoration: underline;
+}
+h3{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 2em;
+    text-align: center;
+}
+p{
+font-family: Arial, Helvetica, sans-serif;
+font-size: 1em;
+}
+
+img{
+    width: 500px;
+}
+.Panier{
+    margin: auto;
+    text-align: center;
+}
+.LignePanier{
+    width: auto;
+}
+.ImagePanier{
+    width: 80px;
+}
+
+.BoutonPanier{
+    border: none;
+}
+/* Fin article*/
+/* Pied de page */
+footer {
+    margin-top: 100px;
+    background-color: #000;
+    padding: 30px;
+    color: #fff;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+  }
+  footer .social-media{
+    display: flex;
+  }
+  footer .social-media p{
+    margin-right: 15px;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    padding: 5px;
+    text-align:center;
+    width: 20px;
+    cursor:pointer;
+  }
+  /* Fin du pied de page */
+  
